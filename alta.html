@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  
+  <link rel="stylesheet" href="estilos.css">
+  
+  </head>
+  
+
+
+
+
+<body background="imagenes/paisaje1/beutiful-view.jpg">
+ <!-- <body> -->
+
+  <div class="navbar">
+  
+    <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Inicio</a>
+    <a href="alta.html"><i class="fa fa-fw fa-user"></i> Publicar Aviso</a>
+    <a href="listado.html"><i class ="fa fa-fw fa-listado"></i>Listado de Avisos</a>
+    <a href="busqueda.html"><i class="fa fa-fw fa-search"></i> Busqueda</a>
+    <a href="contacto.html"><i class="fa fa-fw fa-envelope"></i> Contacto</a>
+    
+  </div>
+  <!-- <img class="w3-image" src="imagenes/paisaje1/beutiful-view.jpg" alt="Fashion Blog" width="1600" height="1060"> -->
+
+<h2>Alta de aviso</h2>
+<h3>Datos del difunto</h3>
+
+
+<form action="/submit-form" method="POST">
+  <label for = "dni">DNI:</label>              
+  <input type="number" id ="dni" name = "dni" ><br><br>
+
+  <label for="Nombre">Nombre:</label><br>
+  <input type="text" id="Nombre" name="Nombre" value="John"><br>
+
+  <label for="Apellido">Apellido:</label><br>
+  <input type="text" id="Apellido" name="Apellido" value="Doe"><br><br>
+
+  <label for ="fecha_de_nacimiento">Fecha de nacimiento</label>
+  <input type="date" name="FechaDeNac"><br><br>
+
+  <label for ="fecha_de_defuncion">Fecha de defunción</label>
+  <input type= "date" name="FechaDeDef"><br><br>
+
+
+  <select name ="Frase">
+    <option>Papá siempre te recordaremos con cariño</option>
+    <option>Siempre te recordaremos con cariño Papá</option>
+    <option>Mamá siempre te recordaremos con cariño</option>
+    <option>Siempre te recordaremos con cariño Mamá</option>
+    <option>Tus amigos siempre te recordaremos con afecto</option>
+    <option>Tus compañeros siempre te recordaremos con afecto</option>
+    <option>Tus colegas siempre te recordaremos con afecto</option>
+    <option>Tus amigas siempre te recordaremos con afecto</option>
+    <option>Tus compañeras siempre te recordaremos con afecto</option>
+    <option>Tus profesores te recordaremos con afecto</option>
+  </select>  
+  <br>
+  <br>
+
+    <!-- <style>
+      textarea {resize: none;}
+    </style> -->
+      <label for="Aviso">Aviso:</label><br>
+      <textarea name="Aviso" id="Aviso" rows = 10 cols=40 resize :none>Escribe aqui tu aviso...</textarea>  
+  
+  <!-- <input type="submit" value="Publicar"> -->
+  <button type="submit">Enviar</button>
+  
+</form> 
+
+
+</body>
+</html>
